@@ -221,4 +221,106 @@ I assumed the target audience is a sophisticated B2B RevOps practitioner who val
 *Generated automatically by the n8n Two-Agent Blog QA & Auto-Patch workflow.*
 
 ---
+
+---
+
+## Run — 2026-03-20T00:03:16.088Z
+
+# QA Report — `sample_blog_post.md`
+
+> **Generated:** 2026-03-20T00:03:08.972Z
+> **File:** `sample_blog_post.md` on branch `main`
+> **Pipeline duration:** 8.6s
+
+---
+
+## Summary
+
+✅ **Patch applied.** 5 operation(s) applied.
+
+| Metric | Value |
+|---|---|
+| Issues identified by QA Agent | 5 |
+| Average confidence (QA Agent) | 83.0% |
+| Operations applied | 5 |
+| Lines skipped by Editor Agent (Tier 3) | 0 |
+| Runtime ops failed | 0 |
+| QA Agent loop retries | 0 |
+| Editor Agent loop retries | 0 |
+
+---
+
+## QA Agent Analysis
+
+### Assumptions
+
+I assumed the target audience is high-level RevOps practitioners who value professional, concise, and actionable language. I treated colloquialisms and vague idioms as stylistic errors that detract from the authority of the content.
+
+### Issues Found
+
+### Line 9 — 🟢 `low` · `grammar` · Confidence: 95% · SVR: ❌
+**Issue:** Redundant use of 'and yet' creates a clunky, repetitive sentence structure.
+**Agent 1 Suggested Fix:** `Most revenue teams know that their CRM is only as good as the data inside it. Yet, according to recent industry surveys, 82% of revenue teams report significant data quality issues in their CRM, while only about a third of companies have any automated process for catching and correcting those problems.`
+
+### Line 43 — 🟡 `medium` · `tone` · Confidence: 85% · SVR: ❌
+**Issue:** The parenthetical '(which, respectfully, never works)' is overly conversational and slightly condescending for a B2B practitioner audience.
+**Agent 1 Suggested Fix:** `2. Rely on reps to keep their own records clean (a strategy that historically yields low adoption).`
+
+### Line 74 — 🟡 `medium` · `clarity` · Confidence: 80% · SVR: ❌
+**Issue:** The phrase 'they feel like they've solved the problem' is informal and vague.
+**Agent 1 Suggested Fix:** `They set up a Zapier workflow or a Salesforce report that flags stale records, but without a closed-loop process, they fail to address the root cause.`
+
+### Line 111 — 🟢 `low` · `clarity` · Confidence: 75% · SVR: ❌
+**Issue:** The phrase 'across the board' is a cliché that lacks the precision expected in a technical RevOps guide.
+**Agent 1 Suggested Fix:** `Teams that stay on top of this often see significant improvements in pipeline velocity and forecast accuracy.`
+
+### Line 131 — 🟡 `medium` · `tone` · Confidence: 80% · SVR: ❌
+**Issue:** The phrase 'wondering why the numbers don't add up' is slightly informal for a professional conclusion.
+**Agent 1 Suggested Fix:** `The teams that don't? They remain trapped in a cycle of quarterly cleanup sprints, struggling with unreliable data and dashboard maintenance.`
+
+
+---
+
+## Editor Agent Decisions
+
+#### Line 9 — ✏️ `replace`
+**New Text:** `Most revenue teams know that their CRM is only as good as the data inside it. Yet, according to rece…`
+**Rationale:** Removed redundant 'and yet' and improved sentence flow for professional clarity.
+
+#### Line 43 — ✏️ `replace`
+**New Text:** `2. Rely on reps to keep their own records clean (a strategy that historically yields low adoption).`
+**Rationale:** Replaced conversational, slightly condescending parenthetical with a more objective, professional assessment of the strategy's efficacy.
+
+#### Line 74 — ✏️ `replace`
+**New Text:** `They set up a Zapier workflow or a Salesforce report that flags stale records, but without a closed-…`
+**Rationale:** Replaced vague, informal phrasing with precise terminology ('closed-loop process', 'root cause') that aligns with RevOps best practices.
+
+#### Line 111 — ✏️ `replace`
+**New Text:** `Teams that stay on top of this often see significant improvements in pipeline velocity and forecast …`
+**Rationale:** Removed the cliché 'across the board' in favor of specific, measurable outcomes relevant to the target audience.
+
+#### Line 131 — ✏️ `replace`
+**New Text:** `The teams that don't? They remain trapped in a cycle of quarterly cleanup sprints, struggling with u…`
+**Rationale:** Elevated the tone of the conclusion to better reflect the professional frustration of managing poor data infrastructure.
+
+
+---
+
+## Tier 3 Lines Skipped by Editor Agent
+
+*Lines with confidence < 0.6 where Agent 2 could not find a suitable alternative.*
+
+*None — Agent 2 found fixes for all verified lines.*
+
+---
+
+## Runtime Skipped Operations
+
+*None.*
+
+---
+
+*Generated automatically by the n8n Two-Agent Blog QA & Auto-Patch workflow.*
+
+---
 <!-- next run will append below -->
