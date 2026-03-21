@@ -6,7 +6,7 @@
 
 ## The Uncomfortable Truth About CRM Hygiene
 
-Most revenue teams know that their CRM is only as good as the data inside it. Yet, according to recent industry surveys, 82% of revenue teams report significant data quality issues in their CRM, while only about a third of companies have any automated process for catching and correcting those problems.
+Recent industry surveys indicate that 82% of revenue teams report significant data quality issues in their CRM, yet only about a third have automated processes for remediation.
 
 Sales and marketing keep arguing about pipeline health, and they're both right: the pipeline looks fine in Salesforce, but the underlying data tells a completely different story.
 
@@ -42,7 +42,7 @@ The traditional answer to data quality in CRM has been either:
 1. Assign someone to audit the data regularly (usually a junior Ops person who hates it)
 2. Rely on reps to keep their own records clean (a strategy that historically yields low adoption).
 
-A 20-person sales team generates roughly 8,000 to 12,000 CRM activities per week. Auditing that manually even once a month is impractical, and once a quarter means you're always working with data that's at least 90 days stale.
+A 20-person sales team generates roughly 8,000 to 12,000 CRM activities per week. Auditing this volume manually is operationally impossible, and quarterly audits leave teams working with data that is at least 90 days stale.
 
 
 The only sustainable answer is automating the detection and correction pipeline. And this is where a lot of RevOps teams get stuck, because they think "automation" means building something expensive in Salesforce's Flow builder or paying for a third-party data enrichment vendor. It doesn't have to be either.
@@ -79,7 +79,7 @@ Teams that deploy the complete four-layer stack consistently see measurable impr
 
 ## Practical Implementation: What to Automate First
 
-Not everything in your CRM is worth automating right away. Start with the issues that have the highest downstream impact on revenue-critical processes. Based on what we've seen across most of the SaaS teams we've worked with, these are the highest-ROI automation targets:
+Based on common benchmarks across growth-stage SaaS organizations, these are the highest-ROI automation targets:
 
 | Priority | Issue Type | Downstream Impact | Recommended Automation |
 |---|---|---|---|
@@ -97,7 +97,7 @@ The order here matters. Starting with owner assignment (Priority 1) gives you an
 
 This is a critical requirement that most teams overlook: you must measure the quality of your CRM data over time, rather than relying on point-in-time snapshots.
 
-Industry data shows that roughly half of revenue teams have no formal data quality process in place — which is why so many forecasts remain fundamentally unreliable quarter after quarter.
+Industry data consistently shows that a majority of revenue teams lack formal data quality processes, which is why so many forecasts remain fundamentally unreliable.
 
 A simple starting point is a weekly "data health score" that tracks:
 
