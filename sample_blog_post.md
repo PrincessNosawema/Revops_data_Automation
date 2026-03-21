@@ -29,7 +29,7 @@ Before we go into solutions, it's worth being specific about what bad data actua
 └──────────────────┴───────────────────────────────────────────────┘
 ```
 
-Across the companies we've studied, completeness issues account for 34% of all CRM data problems, accuracy for 29%, consistency for 31%, and timeliness for 23% — a distribution that illustrates how multi-dimensional the problem really is.
+Across the companies we've studied, completeness issues account for 29% of all CRM data problems, accuracy for 25%, consistency for 26%, and timeliness for 20% — a distribution that illustrates how multi-dimensional the problem really is.
 
 Of the four, **consistency** and **timeliness** are the ones that bite teams the hardest, because they're invisible. A missing field shows up immediately in a required-field validation. A contact that says "Open Opportunity" when the deal closed three months ago doesn't show up anywhere — it just quietly ruins your forecast, your attribution, and your segmentation.
 
@@ -42,7 +42,7 @@ The traditional answer to data quality in CRM has been either:
 1. Assign someone to audit the data regularly (usually a junior Ops person who hates it)
 2. Rely on reps to keep their own records clean (a strategy that historically yields low adoption).
 
-Neither approach scales. A 20-person sales team generates roughly 1,200 to 2,400 CRM activities per week. Auditing that manually even once a month is impractical, and once a quarter means you're always working with data that's at least 90 days stale.
+A 20-person sales team generates roughly 8,000 to 12,000 CRM activities per week. Auditing that manually even once a month is impractical, and once a quarter means you're always working with data that's at least 90 days stale.
 
 
 The only sustainable answer is automating the detection and correction pipeline. And this is where a lot of RevOps teams get stuck, because they think "automation" means building something expensive in Salesforce's Flow builder or paying for a third-party data enrichment vendor. It doesn't have to be either.
@@ -71,7 +71,7 @@ Layer 4: Observability
       └── Trend reporting: are things getting better or worse?
 ```
 
-They set up a Zapier workflow or a Salesforce report that flags stale records, but without a closed-loop process, they fail to address the root cause.
+Many teams set up a Zapier workflow or a Salesforce report that flags stale records, but without a closed-loop process, they fail to address the root cause.
 
 Teams that deploy the complete four-layer stack consistently see measurable improvements in pipeline velocity and forecast accuracy within the first two quarters — making this one of the clearest infrastructure ROI stories available to a growth-stage RevOps team.
 
@@ -108,7 +108,7 @@ A simple starting point is a weekly "data health score" that tracks:
 
 Plot these weekly. If the numbers go up after you implement an automation, that automation is working. If they don't, you either have the wrong automation or the wrong rules. The key is to revisit your automation logic periodically and make adjustments as needed.
 
-Teams that stay on top of this often see significant improvements in pipeline velocity and forecast accuracy.
+Teams that stay on top of this consistently see improvements in pipeline velocity and forecast accuracy.
 
 ---
 
