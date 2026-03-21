@@ -511,4 +511,114 @@ I assumed the article is intended for a professional B2B audience that values pr
 *Generated automatically by the n8n Two-Agent Blog QA & Auto-Patch workflow.*
 
 ---
+
+---
+
+## Run — 2026-03-21T20:15:56.787Z
+
+# QA Report — `sample_blog_post.md`
+
+> **Generated:** 2026-03-21T20:15:55.130Z
+> **File:** `sample_blog_post.md` on branch `main`
+> **Pipeline duration:** 7.7s
+
+---
+
+## Summary
+
+✅ **Patch applied.** 6 operation(s) applied.
+
+| Metric | Value |
+|---|---|
+| Issues identified by QA Agent | 6 |
+| Average confidence (QA Agent) | 88.3% |
+| Operations applied | 6 |
+| Lines skipped by Editor Agent (Tier 3) | 0 |
+| Runtime ops failed | 0 |
+| QA Agent loop retries | 0 |
+| Editor Agent loop retries | 0 |
+
+---
+
+## QA Agent Analysis
+
+### Assumptions
+
+I assumed the target audience is a sophisticated B2B practitioner group that values professional, precise, and objective language. I treated colloquialisms and imprecise terminology as editorial errors.
+
+### Issues Found
+
+### Line 11 — 🟢 `low` · `clarity` · Confidence: 85% · SVR: ❌
+**Issue:** The phrase 'they're both right' is slightly informal and ambiguous; it is better to specify that both departments have valid concerns regarding the discrepancy between CRM data and actual pipeline health.
+**Agent 1 Suggested Fix:** `Sales and marketing often clash over pipeline health, and both departments have valid concerns: the pipeline appears healthy in Salesforce, but the underlying data reveals a different reality.`
+
+### Line 34 — 🟢 `low` · `clarity` · Confidence: 90% · SVR: ❌
+**Issue:** The phrase 'bite teams the hardest' is colloquial and unprofessional for a B2B audience.
+**Agent 1 Suggested Fix:** `Of the four, consistency and timeliness are the most detrimental to teams because they are often invisible.`
+
+### Line 42 — 🟡 `medium` · `tone` · Confidence: 95% · SVR: ❌
+**Issue:** The parenthetical remark '(usually a junior Ops person who hates it)' is unprofessional and subjective.
+**Agent 1 Suggested Fix:** `Assign someone to audit the data regularly (a task that is often manual and prone to human error).`
+
+### Line 48 — 🟢 `low` · `tone` · Confidence: 85% · SVR: ❌
+**Issue:** The phrase 'a lot of RevOps teams' is imprecise; 'many' or 'numerous' is preferred in professional writing.
+**Agent 1 Suggested Fix:** `This is where many RevOps teams get stuck, as they often equate 'automation' with building complex logic in Salesforce's Flow builder or purchasing expensive third-party data enrichment tools.`
+
+### Line 92 — 🔴 `high` · `accuracy` · Confidence: 90% · SVR: ❌
+**Issue:** The claim that duplicate records 'directly suppress your ARR' is technically inaccurate; duplicates inflate the *reporting* of ARR or pipeline, they do not suppress the actual revenue generated.
+**Agent 1 Suggested Fix:** `It is also worth noting that unresolved duplicate company records distort your ARR reporting, as revenue from the same account is split across multiple records—a pattern that can skew reported NRR by 8 to 12 percentage points in mid-market SaaS companies with more than 200 accounts.`
+
+### Line 129 — 🟢 `low` · `tone` · Confidence: 85% · SVR: ❌
+**Issue:** The phrase 'a lot fewer arguments' is informal.
+**Agent 1 Suggested Fix:** `build a compounding advantage over time: better forecasts, improved routing, precise attribution, and significantly fewer conflicts between sales and marketing regarding pipeline validity.`
+
+
+---
+
+## Editor Agent Decisions
+
+#### Line 11 — ✏️ `replace`
+**New Text:** `Sales and marketing often clash over pipeline health, and both departments have valid concerns: the …`
+**Rationale:** Tier 1: The original phrasing was informal and lacked the precision expected in a B2B context. The suggested fix clarifies the departmental tension professionally.
+
+#### Line 34 — ✏️ `replace`
+**New Text:** `Of the four, consistency and timeliness are the most detrimental to teams because they are often inv…`
+**Rationale:** Tier 1: Replaced colloquial language ('bite teams the hardest') with professional terminology ('most detrimental') to maintain authority.
+
+#### Line 42 — ✏️ `replace`
+**New Text:** `1. Assign someone to audit the data regularly (a task that is often manual and prone to human error)`
+**Rationale:** Tier 1: Removed subjective, unprofessional commentary about junior staff in favor of a focus on operational risk.
+
+#### Line 48 — ✏️ `replace`
+**New Text:** `This is where many RevOps teams get stuck, as they often equate 'automation' with building complex l…`
+**Rationale:** Tier 1: Improved precision by replacing 'a lot of' with 'many' and refining the description of the automation misconception.
+
+#### Line 92 — ✏️ `replace`
+**New Text:** `It is also worth noting that unresolved duplicate company records distort your ARR reporting, as rev…`
+**Rationale:** Tier 1: Corrected a technical inaccuracy regarding ARR suppression versus reporting distortion, which is critical for credibility with RevOps leads.
+
+#### Line 129 — ✏️ `replace`
+**New Text:** `build a compounding advantage over time: better forecasts, improved routing, precise attribution, an…`
+**Rationale:** Tier 1: Replaced informal phrasing ('a lot fewer arguments') with professional, concise language suitable for a concluding summary.
+
+
+---
+
+## Tier 3 Lines Skipped by Editor Agent
+
+*Lines with confidence < 0.6 where Agent 2 could not find a suitable alternative.*
+
+*None — Agent 2 found fixes for all verified lines.*
+
+---
+
+## Runtime Skipped Operations
+
+*None.*
+
+---
+
+*Generated automatically by the n8n Two-Agent Blog QA & Auto-Patch workflow.*
+
+---
 <!-- next run will append below -->
